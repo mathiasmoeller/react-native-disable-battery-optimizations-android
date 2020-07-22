@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.reactlibrary.batteryoptimizations;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -30,7 +30,7 @@ public class RNDisableBatteryOptimizationsModule extends ReactContextBaseJavaMod
 			intent.setData(Uri.parse("package:" + packageName));
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			reactContext.startActivity(intent);
-    
+
 	  }
 
   }
